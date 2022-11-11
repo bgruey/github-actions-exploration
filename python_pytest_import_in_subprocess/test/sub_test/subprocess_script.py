@@ -8,6 +8,8 @@ log_handler = logging.StreamHandler(sys.stdout)
 log_handler.setLevel(logging.DEBUG)
 root_logger.addHandler(log_handler)
 
+sys.path.append(os.getcwd())
+
 logging.info("PATH: %s", sys.path)
 logging.info("CWD: %s", os.getcwd())
 logging.info("FILE: %s", os.path.dirname(__file__))
